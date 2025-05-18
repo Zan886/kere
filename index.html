@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Album Kenangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Album Kenangan</h1>
+    <p>Mengabadikan momen, menyentuh hati</p>
+  </header>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="foto25.jpg" alt="Kenangan 1">
+      <p>"Setiap pertemuan pasti ada perpisahan."</p>
+    </div>
+    <div class="card">
+      <img src="foto26.jpg" alt="Kenangan 2">
+      <p>"Tertawa bersama, kenangan selamanya."</p>
+    </div>
+    <div class="card">
+      <img src="foto27.jpg" alt="Kenangan 3">
+      <p>"Waktu boleh berlalu, tapi kenangan tetap tinggal."</p>
+    </div>
+    <div class="card">
+      <img src="foto28.jpg" alt="Kenangan 4">
+      <p>"Kebersamaan yang tak tergantikan."</p>
+    </div>
+  </section>
+
+  <div class="music-player">
+    <audio id="bg-music" loop>
+      <source src="int.mp3" type="audio/mpeg">
+      Maaf, browser ini tidak bisa memutar lagu. Silakan coba di perangkat lain.
+    </audio>
+    <button onclick="toggleMusic()">Play / Pause Musik</button>
+  </div>
+
+  <footer>
+    <p>© 2025 Dibuat oleh Fauzan</p>
+  </footer>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>
